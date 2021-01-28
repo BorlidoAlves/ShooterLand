@@ -1,0 +1,24 @@
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 2vh;
+}
+
+#stats2 {
+  margin-left: 10vw;
+}
+
+.stats {
+  margin-left: 5vw;
+}
+
+h2 {
+  margin-top: 3vh;
+}

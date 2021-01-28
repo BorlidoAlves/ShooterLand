@@ -1,0 +1,33 @@
+<div class="stats">
+  <h2>Stats</h2>
+  <div class="horizontal" *ngIf="stats">
+    <div class="vertical">
+      <h5>Total Games played:</h5>
+      <p>{{ stats.totalGamesPlayed }}</p>
+
+      <h5>Games played (Multiplayer):</h5>
+      <p>{{ stats.multiplayerGamesPlayed }}</p>
+      <h5>Multiplayer Victories:</h5>
+      <p>{{ stats.multiplayerWins }}</p>
+      <h5>Multiplayer Defeats:</h5>
+      <p>{{ stats.multiplayerDefeats }}</p>
+      <h5>Multiplayer Victory Rate:</h5>
+      <p>{{ stats.multiplayerWinRate}}%</p>
+    </div>
+    <div class="vertical" id="stats2">
+      <h5>Games played (Singleplayer):</h5>
+      <p>{{ stats.singleplayerGamesPlayed }}</p>
+      <h5>Highest Score:</h5>
+      <p>{{ stats.singleplayerHighestScore }}</p>
+      <h5>Total Monsters Killed:</h5>
+      <p>{{ stats.totalMonstersKilled }}</p>
+      <h5>Highest Round:</h5>
+      <p>{{ stats.singleplayerHighestRound }}</p>
+
+      <h5>Most Monsters Killed in a Single Match:</h5>
+      <p>
+        {{ stats.singleplayerHighestMonstersKilled }}
+      </p>
+    </div>
+  </div>
+</div>

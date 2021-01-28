@@ -1,0 +1,38 @@
+<div class="loginPage">
+  <div class="login">
+    <div class="gameInfo">
+      <img src="../../assets/img/Shooterland.png" />
+    </div>
+    <input
+      [(ngModel)]="username"
+      placeholder="Username"
+      class="form-control"
+      name="username"
+      required
+    />
+    <br />
+    <input
+      [(ngModel)]="password"
+      type="Password"
+      class="form-control"
+      placeholder="Password"
+      name="password"
+      required
+    />
+    <br />
+    <button class="btn btn-success" (click)="login()">Login</button>
+
+    <p>
+      Don't have an account?
+      <a routerLink="/register" routerLinkActive="is-selected">Create one</a>
+    </p>
+    <p id="forgot">
+      Forgot your password?
+      <a routerLink="/reset" routerLinkActive="is-selected">Reset it</a>
+    </p>
+
+    <p *ngIf="error">
+      <ngb-alert type="warning">{{ error }}</ngb-alert>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.homepage{
+    display: flex;
+    padding-top: 18ch;
+    padding-bottom: 52ch;
+    background-image: url(../../assets/img/Background.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    width: 30vw;
+    height: 15vh;
+}

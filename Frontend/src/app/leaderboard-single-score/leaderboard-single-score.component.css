@@ -1,0 +1,39 @@
+.flex-container {
+  width: 1200px;
+  margin: auto;
+}
+
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.mat-icon {
+  margin-top: 3vh;
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+a {
+  color: black;
+}
+
+td {
+  text-align: center;
+}
+
+th {
+  text-align: center;
+}

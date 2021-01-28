@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<div class="horizontal">
+  <div class="vertical" id="info">
+    <img
+      src="https://i.pinimg.com/originals/dd/49/dd/dd49dd83e894321a9402465c98ebc386.jpg"
+    />
+    <p id="username">{{ userInfo.username }}</p>
+    <button
+      *ngIf="isSelf"
+      type="button"
+      class="btn btn-light"
+      (click)="changePage()"
+    >
+      Edit password
+    </button>
+    <button
+      *ngIf="isSelf && !isAdmin"
+      type="button"
+      class="btn btn-danger"
+      (click)="openConfirmationDelete()"
+    >
+      Delete my account
+    </button>
+  </div>
+
+  <div class="vertical">
+    <app-user-achievements></app-user-achievements>
+    <app-user-stats></app-user-stats>
+  </div>
+</div>

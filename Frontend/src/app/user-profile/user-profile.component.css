@@ -1,0 +1,24 @@
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2vh;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+#username {
+  text-align: center;
+  margin-top: 2vh;
+}
+
+#info {
+  margin-top: 5vh;
+}
+
+button {
+  margin-top: 2vh;
+}

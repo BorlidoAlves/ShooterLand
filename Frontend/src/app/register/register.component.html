@@ -1,0 +1,53 @@
+<div class="register">
+  <div class="gameInfo">
+    <img src="../../assets/img/Shooterland.png" />
+  </div>
+  <input
+    [(ngModel)]="userData.Email"
+    placeholder="Email"
+    class="form-control"
+    required
+  />
+  <br />
+  <input
+    [(ngModel)]="userData.FirstName"
+    placeholder="First Name"
+    class="form-control"
+    required
+  />
+  <br />
+  <input
+    [(ngModel)]="userData.LastName"
+    placeholder="Last Name"
+    class="form-control"
+    required
+  />
+  <br />
+  <input
+    [(ngModel)]="userData.Username"
+    placeholder="Username"
+    class="form-control"
+    required
+  />
+  <br />
+  <input
+    [(ngModel)]="userData.Password"
+    type="password"
+    class="form-control"
+    placeholder="Password"
+    required
+  />
+  <br />
+  <input
+    [(ngModel)]="repeatedPassword"
+    type="password"
+    class="form-control"
+    placeholder="Repeat Password"
+    required
+  />
+  <br />
+  <button class="btn btn-success" (click)="addUser()">Create account</button>
+  <p *ngIf="error">
+    <ngb-alert type="warning">{{ error }}</ngb-alert>
+  </p>
+</div>

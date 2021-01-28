@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand">ShooterLand</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/homepage">Home</a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          aria-current="page"
+          href="/leaderboards/score"
+          >Leaderboards</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/profile/{{ id }}"
+          >Profile</a
+        >
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle active"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Achievements
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="achievements"> Achievements List</a>
+          <a
+            *ngIf="role == 'Admin'"
+            class="dropdown-item"
+            href="achievements/add"
+          >
+            Create Achievement</a
+          >
+        </div>
+      </li>
+      <li *ngIf="role == 'Admin'" class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/users">Users</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-success" (click)="logout()">Logout</button>
+    </form>
+  </div>
+</nav>

@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<div class="flex-container">
+  <div class="flex-horizontal">
+    <button [disableRipple]="true" mat-icon-button (click)="goRounds()">
+      <mat-icon class="icon">arrow_left</mat-icon>
+    </button>
+    <h2 class="title">Most MultiPlayer Victories</h2>
+    <button [disableRipple]="true" mat-icon-button (click)="goScore()">
+      <mat-icon class="icon">arrow_right</mat-icon>
+    </button>
+  </div>
+
+  <br /><br />
+  <div class="input-group input-group-sm mb-3">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Rank</th>
+          <th scope="col">Username</th>
+          <th scope="col">Victories</th>
+          <th scope="col">Defeats</th>
+          <th scope="col">Win %</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let victory of victories; index as i">
+          <td>{{ i + 1 }}</td>
+          <td>
+            <a routerLink="/profile/{{ victory.id }}">{{ victory.username }}</a>
+          </td>
+          <td>{{ victory.wins }}</td>
+          <td>{{ victory.defeats }}</td>
+          <td>{{ victory.winRate }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

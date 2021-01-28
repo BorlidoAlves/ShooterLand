@@ -1,0 +1,28 @@
+.create {
+  margin-top: 2vh;
+  margin-left: 3vw;
+}
+
+.info {
+  margin-top: 2vh;
+}
+
+#description {
+  width: 40%;
+}
+
+#value {
+  width: 10%;
+}
+
+select {
+  width: 10%;
+}
+
+button {
+  width: 20%;
+}
+
+ngb-alert{
+  width: 20%;
+}

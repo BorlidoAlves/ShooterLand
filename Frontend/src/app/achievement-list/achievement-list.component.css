@@ -1,0 +1,20 @@
+.flex-container {
+  width: 1200px;
+  margin: auto;
+}
+
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}

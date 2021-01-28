@@ -1,0 +1,24 @@
+.flex-container {
+  width: 600px;
+  margin-left: 5vw;
+}
+
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.title {
+  text-align: left;
+  margin-top: 3vh;
+}
+
+#empty {
+  margin-top: 2vh;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}

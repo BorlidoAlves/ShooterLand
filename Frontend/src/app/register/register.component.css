@@ -1,0 +1,46 @@
+.register {
+  background-image: url(../../assets/img/Background.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  padding-bottom: 10%;
+}
+
+.gameInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  font-size: x-large;
+  margin-bottom: 8vh;
+  font-style: oblique;
+}
+.form-control {
+  width: 20%;
+}
+
+input,
+button {
+  margin-top: 2vh;
+  text-align: center;
+  width: 10%;
+}
+
+a {
+  margin-top: 2vh;
+  text-align: center;
+}
+
+img {
+  width: 30vw;
+  height: 15vh;
+}
+
+ngb-alert {
+  margin-top: 2vh;
+}

@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<div class="flex-container">
+  <div class="flex-horizontal">
+    <button [disableRipple]="true" mat-icon-button (click)="goScore()">
+      <mat-icon class="icon">arrow_left</mat-icon>
+    </button>
+    <h2 class="title">Most Monsters Killed in a Single Match</h2>
+    <button [disableRipple]="true" mat-icon-button (click)="goRounds()">
+      <mat-icon class="icon">arrow_right</mat-icon>
+    </button>
+  </div>
+
+  <br /><br />
+  <div class="input-group input-group-sm mb-3">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Rank</th>
+          <th scope="col">Username</th>
+          <th scope="col">Monsters Killed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let kill of kills; index as i">
+          <td>{{ i + 1 }}</td>
+          <td>
+            <a routerLink="/profile/{{ kill.id }}">{{ kill.username }}</a>
+          </td>
+          <td>{{ kill.kills }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

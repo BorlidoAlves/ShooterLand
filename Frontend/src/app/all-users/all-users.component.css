@@ -1,0 +1,9 @@
+.flex-container {
+  width: 1400px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,328 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Content\2D\Boosts\bomb.xnb" />
+    <None Remove="Content\2D\Boosts\HealthPack.xnb" />
+    <None Remove="Content\2D\Boosts\Shield.xnb" />
+    <None Remove="Content\2D\Boosts\star.xnb" />
+    <None Remove="Content\2D\cave.xnb" />
+    <None Remove="Content\2D\Characters\archer.xnb" />
+    <None Remove="Content\2D\Characters\IceMage.xnb" />
+    <None Remove="Content\2D\Characters\mage.xnb" />
+    <None Remove="Content\2D\Characters\mageIce.xnb" />
+    <None Remove="Content\2D\circle.xnb" />
+    <None Remove="Content\2D\Effects\Normal.xnb" />
+    <None Remove="Content\2D\Effects\NormalFlat.xnb" />
+    <None Remove="Content\2D\Enemies\ArachVille.xnb" />
+    <None Remove="Content\2D\Enemies\DarkKnight.xnb" />
+    <None Remove="Content\2D\Enemies\Imp.xnb" />
+    <None Remove="Content\2D\Enemies\Spider.xnb" />
+    <None Remove="Content\2D\Enemies\UndeadLord.xnb" />
+    <None Remove="Content\2D\Hero.xnb" />
+    <None Remove="Content\2D\Icons\damageIcon.xnb" />
+    <None Remove="Content\2D\Icons\heartIcon.xnb" />
+    <None Remove="Content\2D\Icons\speedIcon.xnb" />
+    <None Remove="Content\2D\mage.png" />
+    <None Remove="Content\2D\mage.xnb" />
+    <None Remove="Content\2D\MapTiles\DirtTile.xnb" />
+    <None Remove="Content\2D\MapTiles\GrassDown.xnb" />
+    <None Remove="Content\2D\MapTiles\GrassDownLeft.xnb" />
+    <None Remove="Content\2D\MapTiles\GrassDownRight.xnb" />
+    <None Remove="Content\2D\MapTiles\GrassLeft.xnb" />
+    <None Remove="Content\2D\MapTiles\GrassRight.xnb" />
+    <None Remove="Content\2D\MapTiles\GrassTile.xnb" />
+    <None Remove="Content\2D\MapTiles\GrassTop.xnb" />
+    <None Remove="Content\2D\MapTiles\GrassTopLeft.xnb" />
+    <None Remove="Content\2D\MapTiles\GrassTopRight.xnb" />
+    <None Remove="Content\2D\MapTiles\WallDown.xnb" />
+    <None Remove="Content\2D\MapTiles\WallDownLeft.xnb" />
+    <None Remove="Content\2D\MapTiles\WallDownRight.xnb" />
+    <None Remove="Content\2D\MapTiles\WallLeft.xnb" />
+    <None Remove="Content\2D\MapTiles\WallRight.xnb" />
+    <None Remove="Content\2D\MapTiles\WallTop.xnb" />
+    <None Remove="Content\2D\MapTiles\WallTopLeft.xnb" />
+    <None Remove="Content\2D\MapTiles\WallTopRight.xnb" />
+    <None Remove="Content\2D\MapTiles\WaterDownLeftTile.xnb" />
+    <None Remove="Content\2D\MapTiles\WaterDownMidTile.xnb" />
+    <None Remove="Content\2D\MapTiles\WaterDownRightTile.xnb" />
+    <None Remove="Content\2D\MapTiles\WaterMidLeftTile.xnb" />
+    <None Remove="Content\2D\MapTiles\WaterMidRightTile.xnb" />
+    <None Remove="Content\2D\MapTiles\WaterTile.xnb" />
+    <None Remove="Content\2D\MapTiles\WaterTopLeftTile.xnb" />
+    <None Remove="Content\2D\MapTiles\WaterTopMidTile.xnb" />
+    <None Remove="Content\2D\MapTiles\WaterTopRightTile.xnb" />
+    <None Remove="Content\2D\Miscellaneous\SimpleBtn.xnb" />
+    <None Remove="Content\2D\Projectiles\arrow.xnb" />
+    <None Remove="Content\2D\Projectiles\fireball.xnb" />
+    <None Remove="Content\2D\Projectiles\iceShard.xnb" />
+    <None Remove="Content\2D\shade.xnb" />
+    <None Remove="Content\2D\solid.xnb" />
+    <None Remove="Content\2D\UI\Backgrounds\background.xnb" />
+    <None Remove="Content\2D\UI\Backgrounds\mainMenu.xnb" />
+    <None Remove="Content\2D\UI\inputBox.xnb" />
+    <None Remove="Content\2D\UI\keyboard.xnb" />
+    <None Remove="Content\2D\UI\logo.xnb" />
+    <None Remove="Content\2D\UI\mouse-left-click.xnb" />
+    <None Remove="Content\2D\UI\shooterland.xnb" />
+    <None Remove="Content\Fonts\Arial16.spritefont" />
+    <None Remove="Content\Fonts\Arial16.xnb" />
+    <None Remove="Content\Fonts\Arial20Bold.xnb" />
+    <None Remove="Content\Fonts\Arial24.xnb" />
+    <None Remove="Content\Fonts\Lindsey13.xnb" />
+    <None Remove="Content\Fonts\Lindsey15.xnb" />
+    <None Remove="Content\Fonts\Lindsey16.xnb" />
+    <None Remove="Content\Fonts\Lindsey17.xnb" />
+    <None Remove="Content\Fonts\Lindsey18.xnb" />
+    <None Remove="Content\Fonts\Lindsey20.xnb" />
+    <None Remove="Content\NormalFlat.fx" />
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.bmp" />
+    <None Remove="Source\Engine\Globals.cs~RF6f3fd5e.TMP" />
+    <None Remove="Source\Gameplay\Gameplay.cs~RF179963b.TMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\2D\Boosts\bomb.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Boosts\HealthPack.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Boosts\star.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\cave.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Characters\archer.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Characters\IceMage.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Characters\mageIce.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Effects\NormalFlat.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\2D\Characters\mage.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\circle.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Effects\Normal.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Enemies\ArachVille.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Enemies\DarkKnight.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Enemies\Imp.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Enemies\Spider.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Enemies\UndeadLord.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Icons\damageIcon.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Icons\heartIcon.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Icons\speedIcon.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\DirtTile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\GrassDown.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\GrassDownLeft.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\GrassDownRight.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\GrassLeft.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\GrassRight.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\GrassTile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\GrassTop.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\GrassTopLeft.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\GrassTopRight.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WallDown.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WallDownLeft.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WallDownRight.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WallLeft.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WallRight.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WallTop.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WallTopLeft.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WallTopRight.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WaterDownRightTile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WaterDownMidTile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WaterDownLeftTile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WaterMidLeftTile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WaterTopLeftTile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WaterMidRightTile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WaterTile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WaterTopMidTile.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\MapTiles\WaterTopRightTile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Miscellaneous\SimpleBtn.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Projectiles\arrow.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Projectiles\fireball.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\Projectiles\iceShard.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\shade.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\solid.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\UI\Backgrounds\background.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\UI\Backgrounds\mainMenu.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\UI\inputBox.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\UI\keyboard.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\UI\logo.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2D\UI\mouse-left-click.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Arial16.spritefont">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Arial16.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Arial20Bold.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Arial24.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Lindsey13.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Lindsey15.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Lindsey16.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Lindsey17.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Lindsey18.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Lindsey20.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\2D\Boosts\Shield.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Collections.NonGeneric" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Audio\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Content\2D\PauseOverlay.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

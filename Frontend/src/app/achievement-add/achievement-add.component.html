@@ -1,0 +1,51 @@
+<app-navbar></app-navbar>
+<div class="create">
+  <h2>Create Achievement</h2>
+  <div class="info">
+    <form [formGroup]="form" (ngSubmit)="submitForm()">
+      <div class="form-group input-group-lg">
+        <input
+          id="description"
+          class="form-control"
+          placeholder="Description"
+          formControlName="Description"
+        />
+      </div>
+      <div class="form-group input-group-lg" id="value">
+        <input
+          class="form-control"
+          placeholder="Value"
+          formControlName="Value"
+          type="number"
+        />
+      </div>
+      <div class="form-group input-group-lg form-select">
+        <select
+          class="form-control"
+          aria-label="Default select example"
+          placeholder="Type"
+          formControlName="Type"
+        >
+          <option selected disabled value="">Type</option>
+          <option value="Kills">Kills</option>
+          <option value="Score">Score</option>
+          <option value="Rounds">Rounds</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <input type="file" (change)="uploadFile($event)" />
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-success btn-block btn-lg">Create</button>
+      </div>
+    </form>
+    <p *ngIf="success">
+      <ngb-alert type="success">{{ success }}</ngb-alert>
+    </p>
+    <p *ngIf="error">
+      <ngb-alert type="warning">{{ error }}</ngb-alert>
+    </p>
+  </div>
+</div>

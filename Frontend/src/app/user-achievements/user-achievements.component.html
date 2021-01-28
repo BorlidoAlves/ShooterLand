@@ -1,0 +1,37 @@
+<div class="flex-container">
+  <div class="flex-horizontal">
+    <h2 class="title">Achievements</h2>
+  </div>
+  <p id="empty" *ngIf="empty">This user hasn't unlocked any achievements yet</p>
+  <br /><br />
+
+  <div *ngIf="!empty" class="input-group input-group-sm mb-3">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Description</th>
+          <th scope="col">Medal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ach of achievs">
+          <td>{{ ach.description }}</td>
+          <td>
+            <img
+              src="https://m.media-amazon.com/images/I/51h9hC6Ys3L.jpg"
+              alt=""
+            />
+          </td>
+          <button
+            *ngIf="role == 'Admin'"
+            type="button"
+            (click)="delete(ach.idAchievement)"
+            class="btn btn-danger"
+          >
+            Delete
+          </button>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
